@@ -4,9 +4,18 @@ public class Employee extends Person {
     private String idEmployee;
     private String level;
     private String position;
-    private double salary;
+    private int salary;
 
-    public Employee(String name, String dateOfBirth, String gender, int identityCard, int phoneNumber, String email, String idEmployee, String level, String position, double salary) {
+    public Employee(String name,
+                    String dateOfBirth,
+                    String gender,
+                    int identityCard,
+                    int phoneNumber,
+                    String email,
+                    String idEmployee,
+                    String level,
+                    String position,
+                    int salary) {
         super(name, dateOfBirth, gender, identityCard, phoneNumber, email);
         this.idEmployee = idEmployee;
         this.level = level;
@@ -14,7 +23,8 @@ public class Employee extends Person {
         this.salary = salary;
     }
 
-    public String getIdEmployee() {
+    public String
+    getIdEmployee() {
         return idEmployee;
     }
 
@@ -42,7 +52,23 @@ public class Employee extends Person {
         return salary;
     }
 
-    public void setSalary(double salary) {
+    public void setSalary(int salary) {
         this.salary = salary;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "idEmployee=" + idEmployee +
+                ", level='" + level + '\'' +
+                ", position='" + position + '\'' +
+                ", salary=" + salary +
+                ", name='" + name + '\'' +
+                ", dateOfBirth='" + dateOfBirth + '\'' +
+                ", gender='" + gender + '\'' +
+                ", identityCard=" + identityCard +
+                ", phoneNumber=" + phoneNumber +
+                ", email='" + email + '\'' +
+                '}';
     }
 }

@@ -1,12 +1,12 @@
 package case_study.model;
 
 public abstract class Person {
-    private String name;
-    private String dateOfBirth;
-    private String gender;
-    private int identityCard;
-    private int phoneNumber;
-    private String email;
+     String name;
+     String dateOfBirth;
+     String gender;
+     int identityCard;
+     int phoneNumber;
+     String email;
     public Person(String name, String dateOfBirth, String gender, int identityCard, int phoneNumber, String email) {
         this.name = name;
         this.dateOfBirth = dateOfBirth;

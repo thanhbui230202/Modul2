@@ -1,5 +1,7 @@
 package case_study.controller;
 
+import case_study.service.Impl.EmployeeService;
+
 import java.util.Scanner;
 
 public class FuramaController {
@@ -40,6 +42,7 @@ public class FuramaController {
     }
 
     public static void displayEmployeeMenu() {
+        EmployeeService employeeService = new EmployeeService();
         boolean check = true;
         while (check) {
             System.out.println("1.Display list employees");
@@ -50,8 +53,10 @@ public class FuramaController {
             Scanner scanner = new Scanner(System.in);
             switch (scanner.nextInt()) {
                 case 1:
+                    employeeService.display();
                     break;
                 case 2:
+                    employeeService.addNew();
                     break;
                 case 3:
                     break;
