@@ -1,5 +1,6 @@
 package case_study.controller;
 
+import case_study.service.Impl.CustomerService;
 import case_study.service.Impl.EmployeeService;
 
 import java.util.Scanner;
@@ -67,6 +68,7 @@ public class FuramaController {
         }
     }
     public static void displayCustomerMenu(){
+        CustomerService customerService = new CustomerService();
         boolean check = true;
         while (check) {
             System.out.println("1.Display list customer");
@@ -77,9 +79,11 @@ public class FuramaController {
             Scanner scanner = new Scanner(System.in);
             switch (scanner.nextInt()) {
                 case 1:
-
+                    customerService.display();
+                    break;
                 case 2:
-
+                    customerService.addNew();
+                    break;
                 case 3:
 
                 case 4:

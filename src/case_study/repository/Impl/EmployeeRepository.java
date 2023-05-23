@@ -11,15 +11,4 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class EmployeeRepository implements IEmployeeRepository {
-    @Override
-    public void write() {
-        IEmployeeRepository.super.write();
-    }
-
-    @Override
-    public void read() {
-        IEmployeeRepository.super.read();
-
-    }
-
 }

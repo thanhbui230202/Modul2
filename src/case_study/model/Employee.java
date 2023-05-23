@@ -71,4 +71,17 @@ public class Employee extends Person {
                 ", email='" + email + '\'' +
                 '}';
     }
+    //                    String name,
+    //                    String dateOfBirth,
+    //                    String gender,
+    //                    int identityCard,
+    //                    int phoneNumber,
+    //                    String email,
+    //                    String idEmployee,
+    //                    String level,
+    //                    String position,
+    //                    int salary
+    public String getInfo(){
+        return name+","+dateOfBirth +","+gender+","+identityCard+","+phoneNumber+","+email+","+idEmployee+","+level+","+position+","+salary;
+    }
 }

@@ -10,8 +10,7 @@ public class ReadAndWrite {
     public static void writeObject (Product product) throws IOException {
         FileOutputStream fos = new FileOutputStream(FILE_PATH);
         ObjectOutputStream oos = new ObjectOutputStream(fos);
-        oos.writeObj
-    ect(product);
+        oos.writeObject(product);
         oos.close();
     }
     public static void writeObjectList(List<Product> productList) throws IOException {

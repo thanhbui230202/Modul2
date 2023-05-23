@@ -1,2 +1,4 @@
 Student{id=1, name='Nguyen Van A', sex='Nam'}
 Student{id=2, name='Nguyen Van B', sex=' Nu'}
+Student{id=1, name='Nguyen Van A', sex='Nam'}
+Student{id=2, name='Nguyen Van B', sex=' Nu'}
